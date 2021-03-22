@@ -38,7 +38,7 @@ class DiscoverViewController: UIViewController {
   private lazy var tableView: UITableView = {
     let tableView = UITableView()
     tableView.backgroundColor = .clear
-    tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 21, right: 0)
+    tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 21, right: 0)
     tableView.dataSource = self
     tableView.delegate = self
     tableView.register(UINib(nibName: "ClassCell", bundle: nil), forCellReuseIdentifier: ClassCell.identifier)
@@ -89,7 +89,7 @@ class DiscoverViewController: UIViewController {
       searchTypeSelectView.heightAnchor.constraint(equalToConstant: 39),
 
       tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      tableView.topAnchor.constraint(equalTo: searchTypeSelectView.bottomAnchor, constant: 3),
+      tableView.topAnchor.constraint(equalTo: searchTypeSelectView.bottomAnchor, constant: 11),
       tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
     ])
